@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*************************
+   リセット
+ *************************/
+html,body,header,screen,div,h1,h2,h3,h4,h5,p,img {
+     padding: 0;
+     margin: 0;
+}
+
+
+/*************************
+  大枠
+ *************************/
+* {
+  box-sizing: border-box;
+}
+
+.screen {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*************************
+  共通部品
+ *************************/
+
+ /*ヘッダー
+ *********************/
+header {
+  position: relative;
+  height: 80px;
+  padding-top: 9px;
+  background-color: #dc280a;
+}
+header .header_logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header .header_logo img {
+  width: 121px;
+  height: 27px;
+ }
+header .search_area {
+  text-align: center;
+}
+header .search_area input[type=text] {
+  width: 600px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  background-image: url(../images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: 570px center;
+}
+header .trend_container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  background-color: #333333;
+  color: #fff;
+  line-height: 1.9;
+}
+header .trend_container .trend {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .trend_container .trend span {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*モーダル
+ *********************/
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.modal,
+.float_modal {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  padding: 10px 25px;
+  background-color: rgba(103,103,103,0.9);
+  border-radius: 10px;
+  color: #fff;
+}
+
+ /*************************
+  画面固有スタイル
+ *************************/
+
+
+ /*検索画面
+ *********************/
+.top .video_tile {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.top .video_tile .video {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+.top .video_tile .video:nth-of-type(3n) {
+  margin-right: 0;
+}
+.top .video_tile .video .name_area {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+}
+.top .video_tile .video .name_area .name {
+  padding: 0 5px;
+  overflow: hidden;
+}
+.top .video_tile .video .name_area .name span {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 3;
+  overflow: hidden;
+}
+
+ /*動画ホバー時のモーダル
+ *********************/
+.video_hover_detail {
+  width: 440px;
+  min-height: 250px;
+  display: none;
+  margin: 0 0 0 -220px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.video_hover_detail::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: "";
+  z-index: 1500;
+}
+.video_hover_detail .video_thumnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.video_hover_detail .video_name {
+  position: relative;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 2000;
+}
+.video_hover_detail .video_name span {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video_hover_detail .tag_area {
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 2000;
+}
+.video_hover_detail .tag_area .tag {
+  margin-right: 10px;
+  color: #1799ff;
+}
+.video_hover_detail .tag_area .tag::before {
+  margin-right: 1px;
+  content: "#";
+}
+.video_hover_detail .description {
+  position: relative;
+  height: 146px;
+  z-index: 2000;
+  overflow-y: scroll;
+}
+.video_hover_detail .description span {
+  text-overflow: ellipsis;
+  word-break: break-all;
+}

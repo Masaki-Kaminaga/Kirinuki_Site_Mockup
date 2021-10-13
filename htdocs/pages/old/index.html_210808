@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>切り抜き動画サイト(仮)</title>
+    <link rel="stylesheet" href="../common/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header_logo"><img src="../common/images/logo.png" alt="サービスロゴ"></img></div>
+      <div class="search_area"><input type="text" placeholder="検索"></div>
+      <div class="trend_container"><div class="trend"><span>トレンドトレンドトレンドトレンドトレンドトレンドトレンドトレンドトレンドトレンドトレンド</span></div></div>
+    </header>
+    <div class="wrapper">
+      <div class="screen top">
+        <div class="video_tile_container">
+          <div class="video_tile">
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>可愛い猫ちゃん発見</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+            <div class="video">
+              <div class="thumnail"><img src="../common/images/sample/neko.jpeg" alt=""></div>
+              <div class="mouseover_overlay"><div class="overlay_thumnail"><!--ホバー中のサムネイル--></div></div>
+              <div class="name_area">
+                <h3 class="name"><span>タイトルタイトルタイトルタイトルタイトルタイトル</span></h3>
+              </div>
+            </div><!--/.video-->
+          </div><!--/.video_tile-->
+        </div><!--/.video_tile_container-->
+      </div><!--/.top-->
+      <div class="modal_overlay">
+        <div class="modal video_hover_detail">
+
+        </div><!--./modal.video_hover_detail-->
+      </div>
+    </div><!--/.wrapper-->
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  </body>
+</html>
