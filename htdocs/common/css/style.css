@@ -16,6 +16,10 @@ html,body,header,screen,div,h1,h2,h3,h4,h5,p,img {
   box-sizing: border-box;
 }
 
+html {
+  min-width: 1024px;
+}
+
 .screen {
   max-width: 1000px;
   margin: 0 auto;
@@ -79,6 +83,49 @@ header .trend_container .trend span {
   white-space: nowrap;
 }
 
+/*ボタン
+ *********************/
+.button_set button {
+  margin-right: 10px;
+}
+.button_set button:last-child {
+  margin-right: 0;
+}
+button {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+button:active {
+  opacity: 0.7;
+}
+button.execution {
+  background-color: #2e74ff;
+  color: #fff;
+}
+button.cancel {
+  background-color: #efefef;
+  color: #4d4d4d;
+}
+.video_create {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 160px;
+  height: 38px;
+  border: solid 2px #fff;
+  background-color: transparent;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #fff;
+}
+.video_create:active {
+  background-color: #d7604d;
+}
+
 /*モーダル
  *********************/
 .modal_overlay {
@@ -89,7 +136,27 @@ header .trend_container .trend span {
   bottom: 0;
   display: none;
 }
-.modal,
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  width: 1000px;
+  height: 500px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #4d4d4d;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+.modal_title {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+/* 小さいモーダル */
 .float_modal {
   position: absolute;
   top: 50%;
@@ -208,9 +275,79 @@ header .trend_container .trend span {
   position: relative;
   height: 146px;
   z-index: 2000;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .video_hover_detail .description span {
   text-overflow: ellipsis;
   word-break: break-all;
+}
+
+ /*動画再生モーダル
+ *********************/
+.modal.video_pray .modal_body {
+   display: flex;
+   justify-content: space-between;
+}
+.modal.video_pray .praying_container {
+  width: 660px;
+}
+.modal.video_pray .praying_container video {
+  width: 100%;
+  height: 370px;
+  background-color: gray;
+}
+.modal.video_pray .praying_container .tag_container {
+  margin-bottom: 25px;
+}
+.modal.video_pray .praying_container .tag_container .tag {
+  margin-right: 0.9em;
+  color: #1799ff;
+  font-size: 14px;
+  line-height: 1;
+}
+.modal.video_pray .praying_container .video_discription {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.modal.video_pray .praying_container .comment_input {
+  width: 100%;
+  padding: 20px 5px;
+  border-top: solid 2px #e5e5e5;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px #e5e5e5;
+}
+.modal.video_pray .praying_container .button_set {
+  margin: 10px 0 60px;
+  text-align: right;
+}
+.modal.video_pray .praying_container .comment {
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.modal.video_pray .praying_container .comment .comment_text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+.modal.video_pray .praying_container .comment .comment_date {
+  font-size: 11px;
+  color: #b3b3b3;
+}
+.modal.video_pray .relation_container .relation_video {
+  position: relative;
+  width: 230px;
+  height: 130px;
+  margin-bottom: 13px;
+  background-color: #c8c8c8;
+}
+.modal.video_pray .relation_container .relation_video .video_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  line-height: 2.6;
 }
