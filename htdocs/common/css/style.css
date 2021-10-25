@@ -29,8 +29,14 @@ html {
   共通部品
  *************************/
 
- /*ヘッダー
- *********************/
+/*汎用共通スタイル
+*********************/
+.active {
+  display: block !important;
+}
+
+/*ヘッダー
+*********************/
 header {
   position: relative;
   height: 80px;
@@ -135,11 +141,13 @@ button.cancel {
   right: 0;
   bottom: 0;
   display: none;
+  background-color: rgba(0,0,0,0.5);
 }
 .modal {
   position: absolute;
   top: 50%;
-  left: 51%;
+  left: 50%;
+  display: none;
   width: 1000px;
   height: 500px;
   padding: 25px;
