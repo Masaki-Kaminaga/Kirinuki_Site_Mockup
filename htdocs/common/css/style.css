@@ -44,6 +44,15 @@ body {
 .active {
   display: block !important;
 }
+.ta_right {
+  text-align: right;
+}
+.ta_center {
+  text-align: center;
+}
+.ta_left {
+  text-align: left;
+}
 
 /*見出し
 *********************/
@@ -52,7 +61,6 @@ body {
   height: 25px;
   padding-left: 9px;
   font-size: 20px;
-  font-weight: bold;
   line-height: 1.28;
 }
 .title_mid::before {
@@ -64,6 +72,16 @@ body {
   height: 100%;
   background-color: #dc280a;
   content: "";
+}
+.title_left {
+  font-size: 20px;
+  text-align: left;
+  line-height: 1;
+}
+.title_center {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1;
 }
 
 /*フォーム
@@ -83,6 +101,78 @@ input[type=text].under_line::placeholder {
   color: #989898;
 }
 
+/* textarea */
+textarea {
+  padding: 5px;
+}
+textarea::placeholder {
+  color: #989898;
+}
+
+/* ドラッグUI */
+.drug_control_wrapper {
+  font-size: 10px;
+}
+.drug_control_wrapper .base_cont {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #b0b0b0;
+}
+.drug_control_wrapper .base_cont .point {
+  position: absolute;
+  top: -30px;
+  text-align: center;
+}
+.drug_control_wrapper .base_cont .point::before {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 7px 3.5px 0 3.5px;
+  border-color: #000000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+  content: "";
+}
+.drug_control_wrapper .base_cont .point.start {
+ left: 0;
+ transform: translateX(-50%);
+}
+.drug_control_wrapper .base_cont .point.end {
+ right: 0;
+ transform: translateX(50%);
+}
+.drug_control_wrapper .control_cont {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: #1799ff;
+}
+
+/* 時間の長さ入力 */
+.time_input {
+  display: flex;
+  width: 5em;
+  padding-bottom: 2px;
+  border-bottom: solid 2px #989898;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+}
+.time_input input[type=number] {
+  width: 2em;
+  padding: 0 4px 0 0;
+  border: none;
+  background-color: #f7f7f7;
+  text-align: right;
+}
+.time_input input[type="number"]::-webkit-outer-spin-button,
+.time_input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /*ヘッダー
 *********************/
@@ -441,7 +531,6 @@ button.btn_lg.execution {
 /*URL入力画面
 *********************/
 .screen.input_url {
-  background-color: #ccc;
   padding-top: 170px;
 }
 .input_container {
@@ -455,4 +544,111 @@ button.btn_lg.execution {
 .input_url .button_set {
   margin-top: 45px;
   text-align: center;
+}
+
+
+/*URL入力確認画面
+*********************/
+.screen.input_url_confirm {
+  padding-top: 100px;
+}
+.input_url_confirm .confirm_container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: solid 2px #9c9c9c;
+  border-radius: 7px;
+}
+.input_url_confirm .button_set {
+  margin-top: 45px;
+  text-align: center;
+}
+.input_url_confirm .thumnail_area .thumnail {
+  width: 200px;
+  height: 115px;
+  margin: 40px auto 20px;
+}
+
+/*既存動画編集
+*********************/
+.video_edit .edit_container {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+  justify-content: space-between;
+}
+.video_edit .edit_container .title_left {
+  margin-bottom: 30px;
+}
+.video_edit .edit_container video {
+  width: 100%;
+}
+.video_edit .edit_container > p {
+  width: 100%;
+}
+.video_edit .edit_container .edit_left {
+  width: 445px;
+}
+.video_edit .edit_container .edit_right {
+  width: 500px;
+}
+.video_edit .edit_box {
+  margin-top: 20px;
+}
+.video_edit .edit_container .edit_left .edit_box {
+  margin-top: 12px;
+}
+.video_edit .edit_container .edit_right .edit_box:first-of-type {
+  margin-top: 0;
+}
+.video_edit .edit_container .edit_right .edit_box:nth-of-type(2) {
+  position: relative;
+}
+.video_edit .edit_box .title_mid {
+  margin-bottom: 7px;
+}
+.video_edit .edit_box > input[type=text] {
+  width: 100%;
+}
+.video_edit .edit_box > textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: solid 1px #ccc;
+}
+
+/* 挿入コメント */
+.video_edit .edit_box .comment_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.video_edit .edit_box .comment_container .comment_design {
+  display: flex;
+  margin: 0 20px 15px 0;
+}
+.video_edit .edit_box .comment_container .comment_design .label {
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+.video_edit .edit_box .comment_container .comment_design input[type=text] {
+  width: 60px;
+}
+.video_edit .edit_box .comment_container .comment_design.color input[type=text] {
+  width: 75px;
+}
+.video_edit .edit_box .comment_container .comment_design.size input[type=text] {
+  width: 40px;
+}
+
+/* 時間入力エリア */
+.drug_control_wrapper {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 390px;
+  background-color: pink;
 }

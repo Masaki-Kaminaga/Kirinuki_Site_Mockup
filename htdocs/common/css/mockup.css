@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/*モックアップ用のCSS
+実装時には取り込む必要はありません。*/
+
+.input_url_confirm .thumnail_area .thumnail {
+  background-color: #ccc;
+}
