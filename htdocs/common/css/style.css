@@ -17,12 +17,22 @@ html,body,header,screen,div,h1,h2,h3,h4,h5,p,img {
 }
 
 html {
+  height: 100%;
   min-width: 1024px;
 }
 
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;;
+}
+
+.wrapper {
+  flex: 1;
+}
+
 .screen {
-  max-width: 1000px;
-  margin: 0 auto;
+  height: 100%;
 }
 
 /*************************
@@ -35,6 +45,45 @@ html {
   display: block !important;
 }
 
+/*見出し
+*********************/
+.title_mid {
+  position: relative;
+  height: 25px;
+  padding-left: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.28;
+}
+.title_mid::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #dc280a;
+  content: "";
+}
+
+/*フォーム
+*********************/
+
+/* テキスト入力 */
+input[type=text].under_line {
+  padding: 5px 5px 5px 3px;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 2px #989898;
+  border-left: none;
+  background-color: rgba(0,0,0,0);
+  font-size: 15px;
+}
+input[type=text].under_line::placeholder {
+  color: #989898;
+}
+
+
 /*ヘッダー
 *********************/
 header {
@@ -42,6 +91,7 @@ header {
   height: 80px;
   padding-top: 9px;
   background-color: #dc280a;
+  flex-shrink: 0;
 }
 header .header_logo {
   position: absolute;
@@ -94,9 +144,13 @@ header .trend_container .trend span {
 .button_set button {
   margin-right: 10px;
 }
+.button_set button.btn_lg {
+  margin-right: 20px;
+}
 .button_set button:last-child {
   margin-right: 0;
 }
+
 button {
   width: 100px;
   height: 30px;
@@ -115,6 +169,24 @@ button.execution {
 button.cancel {
   background-color: #efefef;
   color: #4d4d4d;
+}
+button.btn_lg {
+  width: 200px;
+  height: 60px;
+  border: solid 2px rgba(0,0,0,0);
+  border-radius: 7px;
+  font-size: 22px;
+  font-weight: bold;
+}
+button.btn_lg.cancel {
+  background-color: #fff;
+  border-color: #9c9c9c;
+  color: #666;
+}
+button.btn_lg.execution {
+  background-color: #dc280a;
+  border-color: #dc280a;
+  color: #fff;
 }
 .video_create {
   position: absolute;
@@ -179,9 +251,15 @@ button.cancel {
   画面固有スタイル
  *************************/
 
-
- /*検索画面
+ /*TOP画面 (検索画面)
  *********************/
+ .screen.top {
+   background-color: #fff;
+ }
+ .video_tile_container {
+   max-width: 1000px;
+   margin: 0 auto;
+ }
 .top .video_tile {
   display: flex;
   flex-wrap: wrap;
@@ -358,4 +436,23 @@ button.cancel {
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   line-height: 2.6;
+}
+
+/*URL入力画面
+*********************/
+.screen.input_url {
+  background-color: #ccc;
+  padding-top: 170px;
+}
+.input_container {
+  width: 450px;
+  margin: 0 auto;
+}
+.input_url input[type=text].under_line {
+  width: 435px;
+  margin: 15px 0 0 7px;
+}
+.input_url .button_set {
+  margin-top: 45px;
+  text-align: center;
 }
