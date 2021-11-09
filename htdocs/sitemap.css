@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* サイトマップ用のCSSです */
+
+/*************************
+   リセット
+ *************************/
+html,body,header,screen,div,h1,h2,h3,h4,h5,p,img {
+     padding: 0;
+     margin: 0;
+}
+body {
+    padding: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+table {
+    width: 786px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+table th {
+  background-color: #e0e0e0;
+}
+
+/* セル */
+.update {
+  background-color: #ffe5b6;
+}
+.name {
+  width: auto;
+}
+.date {
+  width: 160px;
+  text-align: center;
+}
+
+/* urlリンク */
+.url {
+  width: 786px;
+  margin: 0 auto 10px;
+}
+.url a {
+  margin-left: 10px;
+}

@@ -3,6 +3,7 @@
 /*モックアップ用のCSS
 実装時には取り込む必要はありません。*/
 
-.input_url_confirm .thumnail_area .thumnail {
+.input_url_confirm .thumnail_area .thumnail,
+.video_edit video {
   background-color: #ccc;
 }
