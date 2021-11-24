@@ -1,4 +1,4 @@
-@charset "utf-8";
+confirm@charset "utf-8";
 
 /*************************
    リセット
@@ -52,6 +52,11 @@ body {
 }
 .ta_left {
   text-align: left;
+}
+
+/* 見出しなどの文字色 */
+.txt_red {
+  color: #dc280a;
 }
 
 /*見出し
@@ -306,6 +311,11 @@ button.btn_lg.cancel {
 button.btn_lg.execution {
   background-color: #dc280a;
   border-color: #dc280a;
+  color: #fff;
+}
+button.btn_lg.delete {
+  background-color: #5c0700;
+  border-color: #5c0700;
   color: #fff;
 }
 .video_create {
@@ -579,10 +589,10 @@ button.btn_lg.execution {
 
 /*URL入力確認画面
 *********************/
-.screen.input_url_confirm {
+.screen.confirm {
   padding-top: 100px;
 }
-.input_url_confirm .confirm_container {
+.confirm .confirm_container {
   width: 750px;
   margin: 0 auto;
   padding: 20px;
@@ -590,11 +600,11 @@ button.btn_lg.execution {
   border: solid 2px #9c9c9c;
   border-radius: 7px;
 }
-.input_url_confirm .button_set {
+.confirm .button_set {
   margin-top: 45px;
   text-align: center;
 }
-.input_url_confirm .thumnail_area .thumnail {
+.confirm .thumnail_area .thumnail {
   width: 200px;
   height: 115px;
   margin: 40px auto 20px;
@@ -682,4 +692,30 @@ button.btn_lg.execution {
   width: 390px;
   background-color: pink;
   z-index: 1;
+}
+
+/* ボタン */
+.video_edit .button_set {
+  width: 420px;
+  display: flex;
+  margin: 90px auto 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video_edit .button_set button:nth-of-type(2){
+  margin-right: 0;
+}
+.video_edit .button_set button.delete {
+  margin-top: 60px;
+}
+
+/*編集や削除のメッセージ画面
+*********************/
+.complete_messege {
+  padding-top: 130px;
+}
+.complete_messege .button_set {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
 }
