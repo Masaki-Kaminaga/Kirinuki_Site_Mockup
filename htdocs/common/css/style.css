@@ -416,6 +416,7 @@ button.btn_lg.delete {
   background-color: rgba(0,0,0,0.5);
 }
 .top .video_tile .video .name_area .name {
+  margin: 0;
   padding: 0 5px;
   overflow: hidden;
 }
